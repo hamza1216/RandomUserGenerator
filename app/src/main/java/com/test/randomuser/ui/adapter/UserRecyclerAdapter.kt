@@ -28,7 +28,7 @@ class UserRecyclerAdapter(private val context: Context, private var values: List
             .circleCrop()
             .into(holder.imageView)
         holder.nameView.text = "${item.first_name} ${item.last_name}"
-        holder.addressView.text = item.location
+        holder.addressView.text = item.country
     }
 
     fun  getItem(position: Int): User = values[position]

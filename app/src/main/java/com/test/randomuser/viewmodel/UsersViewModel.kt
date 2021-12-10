@@ -54,13 +54,19 @@ class UsersViewModel : ViewModel() {
                             val nameObj = userObj.getAsJsonObject("name")
                             val locationObj = userObj.getAsJsonObject("location")
                             val pictureObj = userObj.getAsJsonObject("picture")
+                            val loginObj = userObj.getAsJsonObject("login")
 
-                            val gender = userObj.get("gender").asString
+                            val email = userObj.get("email").asString
+                            val phone = userObj.get("phone").asString
+                            val cell = userObj.get("cell").asString
                             val firstName = nameObj.get("first").asString
                             val lastName = nameObj.get("last").asString
-                            val location = locationObj.get("country").asString
+                            val city = locationObj.get("city").asString
+                            val state = locationObj.get("state").asString
+                            val country = locationObj.get("country").asString
                             val picture = pictureObj.get("medium").asString
-                            val user = User(gender, firstName, lastName, location, picture)
+                            val username = loginObj.get("username").asString
+                            val user = User(email, username, phone, cell, firstName, lastName, city, state, country, picture)
                             list.add(user)
                         }
                         catch (e: Exception) {

@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">RandomUser</string>
+
+    <string name="name">Name</string>
+    <string name="telephone">Telephone</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+
+    <string name="general">General</string>
+    <string name="address_information">Address Information</string>
+
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
 </resources>

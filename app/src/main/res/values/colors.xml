@@ -10,4 +10,5 @@
     <color name="light_gray">#bcbccc</color>
 
     <color name="divider">#f6f6f6</color>
+    <color name="detailSplitterGray">#70dfdfdf</color>
 </resources>
